@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="23Flower - каталог цветов">
+    <meta name="keywords" content="цветы, букеты, розы, тюльпаны, пионы, гортензии, ранункулюс, весенние букеты, свадебные букеты">
+    <meta name="author" content="23Flower">
+    <title>Каталог - 23Flower</title>
+    <link rel="stylesheet" href="catalog-gort.css">
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <a href="../23Flower/index.html">23Flower</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../23Flower/index.html">Главная</a></li>
+                    <li><a href="../Contacts/Contacts.html">Контакты</a></li>
+                    <li><a href="../About us/About.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <ul class="header__button_list">
+                    <li class="header_list__element card"><img class="card__link" src="../assets/menu/basket.png" id="cart-icon"></li>
+                    <li class="header_list__element user"><img class="user__link" src="../assets/menu/user.png" id="user-icon"></li>
+                    <!-- Popup для корзины -->
+                    <div class="popup" id="cart-popup">
+                        <div class="popup-content">
+                            <span class="close-btn">&times;</span>
+                            <img src="../assets/menu/basket.png" alt="" >
+                            <p>Ваша корзина пуста.</p>
+                        </div>
+                    </div>
+
+                    <!-- Popup для пользователя -->
+                    <div class="popup" id="user-popup">
+                        <div class="popup-content">
+                            <span class="close-btn">&times;</span>
+                            <img src="../assets/user_red.png" alt="" >
+                            <div class="popup__buttons">
+                                <a href="" class="popup__button">Войти</a>
+                                <a href="" class="popup__button">Зарегистрироваться</a>
+                            </div>
+                            <form action="" method="post" class="popup__form">
+                                <input type="text" placeholder="email">
+                                <input type="password" name="" id="" placeholder="password">
+                            </form>
+                            <p>Скидка 15%</p>
+                            <p>новым клиентам</p>
+                        </div>
+                    </div>
+                </ul>
+            </div>    
+        </div>
+    </header>
+
+    <section class="catalog-content">
+        <!-- Бургер и слово "Каталог" -->
+        <div class="burger-container">
+            <div class="burger" onclick="toggleMenu()">
+                <!-- Вставьте свою иконку бургера -->
+                <img src="../assets/menu/burger.png" alt="Меню">
+            </div>
+            <span class="catalog-title">Каталог</span>
+        </div>
+
+        <!-- Бургер-меню -->
+        <div class="burger-menu">
+            <ul>
+                <li><a href="catalog-rose.html">Розы</a></li>
+                <li><a href="catalog-tulpan.html">Тюльпаны</a></li>
+                <li><a href="catalog-pion.html">Пионы</a></li>
+                <li><a href="catalog-gort.html">Гортензии</a></li>
+                <li><a href="catalog-ranun.html">Ранункулюс</a></li>
+                <li><a href="catalog-vesbuket.html">Весенние букеты</a></li>
+                <li><a href="catalog-svadbuket.html">Свадебные букеты</a></li>
+            </ul>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="product-container">
+            <!-- Изображение и кружки -->
+            <div class="product-image">
+                <img src="../assets/catalog/image-gort.png" alt="Розовые тюльпаны">
+                <div class="price-circle">
+                    <div class="circle-large">69$</div>
+                </div>
+            </div>
+
+            <!-- Заголовок и описание -->
+            <div class="product-info">
+                <div class="product-title">
+                    <h2>Гортензии</h2>
+                    <p>8 бутонов</p>
+                </div>
+                <div class="product-description">
+                    <p>
+                        Букет из гортензий — это настоящая поэзия в мире цветов, воплощение нежности, изысканности и глубины.<br>
+                        Гортензии дарят чувство уюта и спокойствия, их мягкие формы и приглушенные тона словно убаюкивают, наполняя пространство теплом и гармонией.<br>
+                        Эти цветы — символ искренности, благодарности и глубоких чувств. Они говорят о том, что даже в самых простых моментах можно найти невероятную красоту и вдохновение.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Помощник -->
+    <div class="assistant">
+        <img src="../assets/catalog/helper.png" alt="Помощник" onclick="togglePopup()">
+    </div>
+
+    <!-- Диалоговое окно (popup) -->
+    <div class="popup__assist" id="popup">
+        <div class="popup__assist-content">
+            <span class="close-btn__assist" onclick="togglePopup()">&times;</span>
+            <h2>Помощник</h2>
+            
+            <form method="GET" action="#" class="helper__form">
+                <textarea placeholder="Чем могу помочь?" class="helpertext"></textarea>
+            </form>
+        </div>
+    </div>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
