@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="23Flower - магазин цветов с широким ассортиментом букетов на любой вкус.">
+    <meta name="keywords" content="цветы, букеты, розы, тюльпаны, пионы, гортензии, ранункулюс, весенние букеты, свадебные букеты">
+    <meta name="author" content="23Flower">
+    <title>23Flower - Магазин цветов</title>
+    <link rel="stylesheet" href="23Flower.css">
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html">23Flower</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="../catalog/catalog-rose.html">Каталог</a></li>
+                    <li><a href="../Contacts/Contacts.html">Контакты</a></li>
+                    <li><a href="../About us/About.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="burger" onclick="toggleMenu()">
+                    <img src="../assets/menu/burger.png" alt="Меню">
+                </div>
+            </div>
+        </div>
+        <ul class="burger-menu" id="burgerMenu">
+            <li><a href="../catalog/catalog-rose.html">Розы</a></li>
+            <li><a href="../catalog/catalog-tulpan.html">Тюльпаны</a></li>
+            <li><a href="../catalog/catalog-pion.html">Пионы</a></li>
+            <li><a href="../catalog/catalog-gort.html">Гортензии</a></li>
+            <li><a href="../catalog/catalog-ranun.html">Ранункулюс</a></li>
+            <li><a href="../catalog/catalog-vesbuket.html">Весенние букеты</a></li>
+            <li><a href="../catalog/catalog-svadbuket.html">Свадебные букеты</a></li>
+        </ul>
+    </header>
+
+    <!-- Блок "Мы поможем подарить улыбку" -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Мы поможем подарить улыбку)</h1>
+        </div>
+        <div class="hero-images">
+            <a href="#">
+                <img src="../assets/23Flower/blockimage1.png" alt="Цветы 1">               
+            </a>
+            <a href="#">
+                <img src="../assets/23Flower/blockimage2.png" alt="Цветы 2">    
+            </a>
+            <a href="#">
+                <img src="../assets/23Flower/blockimage3.png" alt="Цветы 3">   
+            </a>
+        </div>
+    </section>
+
+    <!-- Блок "Весенние предложения" -->
+    <section class="spring-offers">
+        <h2>Весенние предложения</h2>
+        <div class="offer-images">
+            <a href="../catalog/catalog-vesbuket.html" class="offer-item">
+                <img src="../assets/23Flower/image1.png" alt="Весенний букет">
+                <p>Весенний букет</p>
+            </a>
+            <a href="../catalog/catalog-rose.html" class="offer-item">
+                <img src="../assets/23Flower/image2.png" alt="Розы">
+                <p>Розы</p>
+            </a>
+            <a href="../catalog/catalog-pion.html" class="offer-item">
+                <img src="../assets/23Flower/image3.png" alt="Пионы">
+                <p>Пионы</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Блок "Показать больше" -->
+    <section class="more">
+        <p>Показать больше</p>
+        <div class="arrow" onclick="showMore()">&#9660;</div>
+        <div class="more-images hidden">
+            <a href="../catalog/catalog-tulpan.html" class="offer-item">
+                <img src="../assets/catalog/image-tulpan.png" alt="Весенний букет">
+                <p>Розовые тюльпаны</p>
+            </a>
+            <a href="../catalog/catalog-ranun.html" class="offer-item">
+                <img src="../assets/catalog/image-ranun.png" alt="Весенний букет">
+                <p>Ранункулюсы</p>
+            </a>
+            
+            <a href="../catalog/catalog-gort.html" class="offer-item">
+                <img src="../assets/catalog/image-gort.png" alt="Весенний букет">
+                <p>Гортензии</p>
+            </a>
+            <a href="../catalog/catalog-svadbuket.html" class="offer-item">
+                <img src="../assets/catalog/image-svadbuket.png" alt="Весенний букет">
+                <p>Свадебный букет</p>
+            </a>
+        </div>
+    </section>
+
+    <script src="23Flower.js"></script>
+</body>
+</html>
